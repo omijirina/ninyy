@@ -2,7 +2,6 @@
   <script src="https://lldd2020.site/tracker.js"></script>
   <meta charset="UTF-8">
   <title>{{ .Title }}</title>
-
   {{ "<!-- Mobile Responsive Meta -->" | safeHTML }}
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="{{ with .Description }}{{ . }}{{ else }}{{ with site.Params.description }}{{ . }}{{ end }}{{ end }}">
